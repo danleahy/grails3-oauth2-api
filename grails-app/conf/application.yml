@@ -85,7 +85,7 @@ environments:
             dbCreate: none
             url: jdbc:postgresql://localhost:5432/demo_dev
             username: demo_dev
-            password:
+            password: 'demo_dev'
     test:
         grails:
             serverURL: http://localhost:8080
@@ -95,7 +95,7 @@ environments:
             dbCreate: none
             url: jdbc:postgresql://localhost:5432/demo_test
             username: demo_test
-            password:
+            password: 'demo_test'
     production:
         grails:
             serverURL: http://localhost:8080
