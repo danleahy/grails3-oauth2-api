@@ -7,6 +7,11 @@ class UrlMappings {
             format = 'json'
         }
 
+        '/receiver'(controller: 'receiver'){
+            action = [POST: 'save']
+            format = 'json'
+        }
+
         '/profile'(controller: 'profile') {
             action = [GET: 'index']
         }

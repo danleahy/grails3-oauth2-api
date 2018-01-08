@@ -78,6 +78,7 @@ dependencies {
 
     runtime "org.postgresql:postgresql:9.3-1101-jdbc41"
     runtime 'org.grails.plugins:database-migration:2.0.0.RC1'
+    compile 'org.liquibase:liquibase-core:3.5.3'
 
     compile('org.grails:grails-datastore-rest-client:4.0.0.RELEASE') {
         exclude group: 'javax.servlet', module: 'javax.servlet-api'
