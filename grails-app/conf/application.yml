@@ -77,8 +77,8 @@ dataSource:
 
 environments:
     development:
-        grails:
-            serverURL: http://localhost:8080
+        server:
+                port: 9090
         dataSource:
             driverClassName: org.postgresql.Driver
             dialect: org.hibernate.dialect.PostgreSQL9Dialect
