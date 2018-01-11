@@ -89,10 +89,10 @@ environments:
             username: demo_dev
             password: 'demo_dev'
     test:
+        grails:
+                serverURL: http://localhost:9090
         server:
                     port: 9090
-        grails:
-            serverURL: http://localhost:8080
         dataSource:
             driverClassName: org.postgresql.Driver
             dialect: org.hibernate.dialect.PostgreSQL9Dialect
@@ -129,7 +129,7 @@ environments:
                 jdbcInterceptors: ConnectionState
                 defaultTransactionIsolation: 2 # TRANSACTION_READ_COMMITTED
 ---
-grails:
-    plugin:
-        databasemigration:
-            updateOnStart: true
+#grails:
+#    plugin:
+#        databasemigration:
+#            updateOnStart: true

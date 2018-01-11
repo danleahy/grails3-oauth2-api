@@ -19,8 +19,7 @@ class ReceiverSpec extends Specification {
 
     def setup() {
 
-       // String baseUrl1 = Holders.grailsApplication.config.grails.serverURL
-        baseUrl = 'http://localhost:9090'
+        baseUrl = Holders.grailsApplication.config.grails.serverURL
         jsonStringFromFile =  new File('./json/sample_json1.json').text
 
         rest = new RestBuilder()
